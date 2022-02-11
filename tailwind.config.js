@@ -229,7 +229,9 @@ module.exports = {
       150: '1.5',
       200: '2',
     },
-    container: {},
+    container: {
+      center: true
+    },
     content: {
       none: 'none',
     },
@@ -347,6 +349,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        "Myriad Pro",
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -949,5 +952,7 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
