@@ -1,5 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
+import Banner from '../components/Banner'
+
+const Box = ({ children, link }: { children: React.ReactNode, link: string }) => {
+	return(
+		<Link href={link}>
+			<a>
+				<div className="h-full p-6 border-2 cursor-pointer hover:bg-gray-300 transition-colors duration-100">
+					{children}
+				</div>
+			</a>
+		</Link>
+	)
+}
 
 const Home: NextPage = () => {
 	return (
@@ -8,44 +22,35 @@ const Home: NextPage = () => {
 				<title>CAS</title>
 			</Head>
 			<div>
-				<div className="relative">
-					<img src="/landscapeCut.jpg" className="w-full" alt="" />
+				{/* TITLE */}
+				<Banner subtitle="CBCAS" number="01" bgimage="/landscapeCut.jpg">
+					<h1 className="font-bold text-8xl mb-4">CAS</h1>
+					<p className="text-2xl">A guide to CAS at Colonel By</p>
+				</Banner>
 
-					<div className="absolute top-0 left-0 w-full h-full grid grid-cols-7">
-						<div className="col-span-2 pt-28 pl-10 pr-20  text-white">
-							<div className="flex flex-row justify-between items-center gap-x-5">
-								<p>CBCAS</p>
-								<hr className="flex-1" />
-								<p>01</p>
-							</div>
-						</div>
-						<div className="col-span-3 flex flex-col pt-28 text-white pb-20">
-							<h1 className="font-bold text-8xl mb-4">CAS</h1>
-							<p className="text-2xl">A guide to CAS at Colonel By</p>
-						</div>
-					</div>
-				</div>
+				{/* Question Boxes */}
 				<div className="grid grid-cols-7">
 					<div className="col-span-2"></div>
 					<div className="col-span-5 grid grid-cols-3 grid-rows-2">
-						<div className="p-6 border-2">
+						<Box link="https://www.youtube.com/watch?v=6sWlG-1FMoE">
 							<h1 className="font-bold text-lg">What is CAS all about at CB</h1>
-						</div>
-						<div className="p-6 border-2">
+							<p>(Youtube Video)</p>
+						</Box>
+						<Box link="/experience">
 							<h1 className="font-bold text-lg">What is a CAS Experience?</h1>
-						</div>
-						<div className="p-6 border-2">
+						</Box>
+						<Box link="/project">
 							<h1 className="font-bold text-lg">What is a CAS Project?</h1>
-						</div>
-						<div className="p-6 border-2">
+						</Box>
+						<Box link="/outcomes">
 							<h1 className="font-bold text-lg">What are the CAS Learning Outcomes</h1>
-						</div>
-						<div className="p-6 border-2">
+						</Box>
+						<Box link="/requirements">
 							<h1 className="font-bold text-lg">What are the CAS requirements for graduation?</h1>
-						</div>
-						<div className="p-6 border-2">
+						</Box>
+						<Box link="/evidence">
 							<h1 className="font-bold text-lg">What types of evidence are required?</h1>
-						</div>
+						</Box>
 					</div>
 				</div>
 			</div>
