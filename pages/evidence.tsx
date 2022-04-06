@@ -3,7 +3,7 @@ import Banner from "../components/Banner";
 const evidence = () => {
     return (
         <div>
-            <Banner subtitle="EVIDENCE" number="02" bgimage="/landscapeCut.jpg" className="mb-10">
+            <Banner subtitle="EVIDENCE" number="02" bgimage="/banner.jpg" className="mb-10">
                 <h1 className="font-bold text-8xl mb-4">CAS Evidence</h1>
                 <p className="text-2xl">What counts as evidence for a CAS Experience/Project?</p>
             </Banner>

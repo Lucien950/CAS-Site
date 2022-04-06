@@ -7,7 +7,7 @@ const Box = ({ children, link }: { children: React.ReactNode, link: string }) =>
 	return(
 		<Link href={link}>
 			<a>
-				<div className="h-full p-6 border-2 cursor-pointer hover:bg-gray-300 transition-colors duration-100">
+				<div className="h-full p-6 cursor-pointer hover:bg-gray-300 bg-white transition-colors duration-100">
 					{children}
 				</div>
 			</a>
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 			</Head>
 			<div>
 				{/* TITLE */}
-				<Banner subtitle="CBCAS" number="01" bgimage="/landscapeCut.jpg">
+				<Banner subtitle="CBCAS" number="01" bgimage="/banner.jpg">
 					<h1 className="font-bold text-8xl mb-4">CAS</h1>
 					<p className="text-2xl">A guide to CAS at Colonel By</p>
 				</Banner>
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 				{/* Question Boxes */}
 				<div className="grid grid-cols-7">
 					<div className="col-span-2"></div>
-					<div className="col-span-5 grid grid-cols-3 grid-rows-2">
+					<div className="col-span-5 grid grid-cols-3 grid-rows-2 gap-[2px] border-2 bg-slate-300">
 						<Box link="https://www.youtube.com/watch?v=6sWlG-1FMoE">
 							<h1 className="font-bold text-lg">What is CAS all about at CB</h1>
 							<p>(Youtube Video)</p>
@@ -51,6 +51,10 @@ const Home: NextPage = () => {
 						<Box link="/evidence">
 							<h1 className="font-bold text-lg">What types of evidence are required?</h1>
 						</Box>
+						<Box link="/acceptable">
+							<h1 className="font-bold text-lg">What are acceptable Projects?</h1>
+						</Box>
+						<div className="col-span-2 bg-white"></div>
 					</div>
 				</div>
 			</div>

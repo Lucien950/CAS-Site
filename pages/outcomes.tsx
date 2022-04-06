@@ -3,7 +3,7 @@ import Banner from "../components/Banner";
 const outcomes = () => {
 	return (
 		<div>   
-			<Banner subtitle="OUTCOMES" number="02" bgimage="/landscapeCut.jpg" className="mb-10">
+			<Banner subtitle="OUTCOMES" number="02" bgimage="/banner.jpg" className="mb-10">
 				<h1 className="font-bold text-8xl mb-4">CAS Outcomes</h1>
 				<p className="text-2xl">The outcomes of the CAS Program</p>
 			</Banner>

@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navbar />
+      <div style={{ "height":"63px" }}></div>
       <Component {...pageProps} />
     </>
   )

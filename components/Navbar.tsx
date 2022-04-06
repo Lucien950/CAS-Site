@@ -14,7 +14,6 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="col-span-3 flex flex-row items-center h-full">
-                LINKS
             </div>
             <div className="col-span-2 flex flex-row justify-end items-center gap-x-3">
                 <h1 className="text-lg font-bold">
