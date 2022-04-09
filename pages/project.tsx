@@ -9,8 +9,8 @@ const project = () => {
 			</Head>
 			<div>
 				<Banner subtitle="PROJECT" number="02" bgimage="/banner.jpg" className="mb-10">
-					<h1 className="font-bold text-8xl mb-4">CAS Projects</h1>
-					<p className="text-2xl">A guide to CAS projects at CB</p>
+					{"CAS Projects"}
+					{"A guide to CAS projects at CB"}
 				</Banner>
 				<div className="container prose mb-24">
 					<h1>Intro</h1>

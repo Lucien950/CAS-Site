@@ -1,10 +1,14 @@
+import { ReactNode } from "react";
+
 const Banner = ({children, subtitle, number, bgimage, className}: {
-    children: React.ReactNode,
+    children: ReactNode[],
     subtitle: string,
     number: string,
     bgimage: string
     className?: string,
 }) => {
+    console.log(children)
+    const [head, paragraph] = children
     return (
         <div className={"relative " + className}>
             <img src={bgimage} className="w-full max-h-[500px] object-cover object-top grayscale-[40%]" alt="" />
@@ -17,7 +21,12 @@ const Banner = ({children, subtitle, number, bgimage, className}: {
                     </div>
                 </div>
                 <div className="col-span-3 flex flex-col justify-end pt-36 pb-20 drop-shadow-2xl">
-                    {children}
+                    <h1 className="font-bold text-8xl mb-4">
+                        {head}
+                    </h1>
+                    <p className="text-2xl">
+                        {paragraph}
+                    </p>
                 </div>
             </div>
         </div>
