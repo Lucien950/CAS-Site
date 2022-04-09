@@ -9,8 +9,8 @@ const outcomes = () => {
 			</Head>
 			<div>   
 				<Banner subtitle="OUTCOMES" number="02" bgimage="/banner.jpg" className="mb-10">
-					<h1 className="font-bold text-8xl mb-4">CAS Outcomes</h1>
-					<p className="text-2xl">The outcomes of the CAS Program</p>
+					{"CAS Outcomes"}
+					{"The outcomes of the CAS Program"}
 				</Banner>
 				<div className="prose container mb-24">
 					<blockquote>

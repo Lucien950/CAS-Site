@@ -9,8 +9,8 @@ const requirements = () => {
 			</Head>
 			<div>
 				<Banner subtitle="REQUIREMENTS" number="02" bgimage="/banner.jpg" className="mb-10">
-					<h1 className="font-bold text-8xl mb-4">CAS Requirements</h1>
-					<p className="text-2xl">A guide to fulfilling CAS graduation requirements</p>
+					{"CAS Requirements"}
+					{"A guide to fulfilling CAS graduation requirements"}
 				</Banner>
 				<div className="container prose mb-20">
 

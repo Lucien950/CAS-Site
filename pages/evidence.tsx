@@ -9,8 +9,8 @@ const evidence = () => {
             </Head>
             <div>
                 <Banner subtitle="EVIDENCE" number="02" bgimage="/banner.jpg" className="mb-10">
-                    <h1 className="font-bold text-8xl mb-4">CAS Evidence</h1>
-                    <p className="text-2xl">What counts as evidence for a CAS Experience/Project?</p>
+                    {"CAS Evidence"}
+                    {"What counts as evidence for a CAS Experience/Project?"}
                 </Banner>
 
                 <div className="container prose">

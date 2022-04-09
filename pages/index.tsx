@@ -24,8 +24,8 @@ const Home: NextPage = () => {
 			<div>
 				{/* TITLE */}
 				<Banner subtitle="CBCAS" number="01" bgimage="/banner.jpg">
-					<h1 className="font-bold text-8xl mb-4">CAS</h1>
-					<p className="text-2xl">A guide to CAS at Colonel By</p>
+					{"CAS"}
+					{"A guide to CAS at Colonel By"}
 				</Banner>
 
 				{/* Question Boxes */}
