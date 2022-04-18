@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 				</Banner>
 
 				{/* Question Boxes */}
-				<div className="grid grid-cols-7">
+				<div className="grid grid-cols-3">
 					<div className="col-span-2"></div>
 					<div className="col-span-5 grid grid-cols-3 grid-rows-2 gap-[2px] border-2 bg-slate-300">
 						<Box link="https://www.youtube.com/watch?v=6sWlG-1FMoE">
